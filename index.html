@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Aşkımm ❤️</title>
+<title>Ömrümmm ❤️</title>
 
 <style>
 *{
@@ -34,8 +34,8 @@ h1{
 }
 
 .photo{
-    width:250px;
-    height:250px;
+    width:300px;
+    height:300px;
     border-radius:25px;
     object-fit:cover;
     border:5px solid white;
@@ -67,6 +67,30 @@ h1{
     margin-top:30px;
     line-height:1.8;
     font-size:18px;
+}
+
+.btn{
+    margin-top:30px;
+    padding:15px 30px;
+    border:none;
+    border-radius:50px;
+    font-size:20px;
+    cursor:pointer;
+    background:white;
+    color:#ee9ca7;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:scale(1.05);
+}
+
+#mesaj{
+    margin-top:20px;
+    font-size:22px;
+    line-height:1.8;
+    font-weight:bold;
 }
 
 .footer{
@@ -102,7 +126,7 @@ h1{
 
 <div class="container">
 
-<h1>❤️ Bitanemmm❤️</h1>
+<h1>❤️ Ömrümmm ❤️</h1>
 
 <img src="foto.jpg" class="photo">
 
@@ -135,7 +159,7 @@ h1{
 <div class="message">
 ❤️<br><br>
 
-Ömrümmmm,<br><br>
+Ömrümmm,<br><br>
 
 Belki her zaman söylemiyorum ama sen benim için gerçekten çok değerlisin.<br><br>
 
@@ -146,8 +170,14 @@ Seni seviyorum. ❤️
 
 </div>
 
+<button onclick="surpriz()" class="btn">
+❤️ Bana Tıkla ❤️
+</button>
+
+<div id="mesaj"></div>
+
 <div class="footer">
-Bu siteyi sadece canım istediği için yaptım. ❤️
+08.09.2025'ten beri hayatımı güzelleştiren kız ❤️
 </div>
 
 </div>
@@ -180,6 +210,29 @@ function counter(dateString, elementId){
 counter("2025-09-08","see");
 counter("2025-12-25","talk");
 counter("2026-01-10","love");
+
+function surpriz(){
+
+document.getElementById("mesaj").innerHTML = `
+❤️
+
+Seniha,
+
+Belki son zamanlarda eskisi kadar söylemiyorum ama sen benim için gerçekten çok özelsin.
+
+Seninle konuşmayı, seninle gülmeyi ve vakit geçirmeyi seviyorum.
+
+Bazen sebepsiz yere aklıma geliyorsun.
+
+Bazen de bir şey görünce "bunu Seniha görse kesin gülerdi" diye düşünüyorum.
+
+İyi ki hayatımdasın.
+
+İyi ki seni tanımışım.
+
+Ve iyi ki benim sevgilimsin. ❤️
+`;
+}
 
 for(let i=0;i<30;i++){
 
